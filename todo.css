@@ -1,0 +1,107 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #acc5c0;
+    color: #645844;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h1, h2 {
+    color: #b26a2a;
+}
+
+#todo-list {
+    margin-bottom: 20px;
+}
+
+#task-input, #task-time {
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #997961;
+    border-radius: 5px;
+    background-color: #f4b46c;
+    color: #645844;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #f8953d;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #b26a2a;
+}
+
+#task-list {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+#task-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #f4b46c;
+    border-bottom: 1px solid #997961;
+    color: #645844;
+}
+
+#task-list li.completed {
+    text-decoration: line-through;
+    color: #997961;
+}
+
+#calendar {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);  /* 7 days + 1 for the time labels */
+    grid-gap: 5px;
+    margin-top: 20px;
+}
+
+.calendar-time, .calendar-day {
+    padding: 10px;
+    background-color: #f4b46c;
+    border: 1px solid #997961;
+    border-radius: 5px;
+    color: #645844;
+}
+
+.calendar-time {
+    background-color: #acc5c0;
+    font-weight: bold;
+}
+
+.calendar-day {
+    height: 100px;
+    position: relative;
+    overflow: hidden;
+}
+
+.calendar-event {
+    background-color: #f8953d;
+    border-radius: 5px;
+    padding: 5px;
+    margin-top: 5px;
+    color: white;
+    font-size: 12px;
+}
+
+.remove-task {
+    color: red;
+    font-weight: bold;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
